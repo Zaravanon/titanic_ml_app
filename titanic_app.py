@@ -4,14 +4,15 @@ import requests
 from io import BytesIO
 
 # Load the pre-trained Random Forest model (replace 'model.pkl' with your actual path)
-#model = pd.read_pickle(r'titanic_model.pkl')
+model = pd.read_pickle(r'titanic_model.pkl')
 
+"""
 @st.cache(allow_output_mutation=True)
 def load_model():
     url = 'https://github.com/example_username/example_repo/raw/main/titanic_model.pkl'  # Replace with your actual GitHub URL
     response = requests.get(url)
     model = pickle.load(BytesIO(response.content))
-    return model
+    return model"""
 
 # Title and description for your app
 st.title("TITANIC SIRVIVAL PREDICTOR")
