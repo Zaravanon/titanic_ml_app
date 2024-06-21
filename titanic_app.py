@@ -17,7 +17,7 @@ sex = st.selectbox("Sex", options=["Male", "Female"])
 age = st.slider('Age', 0, 120, 1)
 sibsp = st.number_input("Number of Siblings/Spouses Aboard", min_value=0)
 parch = st.number_input("Number of Parents/Children Aboard", min_value=0)
-embarked = st.selectbox("Embarked Location", options=["C", "S", "Q"])
+embarked = st.selectbox("Embarked Location", options=["Cherbourg", "Southampton", "Queenstown"])
 
 #derived_variables
 famsize = parch + sibsp
@@ -26,7 +26,7 @@ bins = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 labels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 age_category = pd.cut([age], bins=bins, labels=labels, right=True)[0]
 
-embarked = {'S': 1, 'C': 2, 'Q': 3}.get(embarked)
+embarked = {'Southampton': 1, 'Cherbourg': 2, 'Queenstown': 3}.get(embarked)
 
 sex = {'male': 1, 'female': 0}.get(sex)
 
