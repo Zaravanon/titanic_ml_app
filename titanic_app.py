@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import base64
 
 # Load the pre-trained Random Forest model (replace 'model.pkl' with your actual path)
 model = pd.read_pickle(r'C:\Users\rasa1012\Documents\Personal\ML Projects\Titanic Prediction\titanic_model.pkl')
@@ -43,13 +42,6 @@ data = {
 
 # Convert data to a DataFrame
 df = pd.DataFrame(data, index=[0])
-
-#Image Reader function 
-
-def get_base64_of_bin_file(file_path):
-    with open(file_path, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
 
 # Prediction button
 if st.button("Predict Survival"):
