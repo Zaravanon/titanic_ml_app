@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import pickle
 
 # Load the pre-trained Random Forest model (replace 'model.pkl' with your actual path)
 model = pd.read_pickle(r'C:\Users\rasa1012\Documents\Personal\ML Projects\Titanic Prediction\titanic_model.pkl')
