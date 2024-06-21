@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import requests
-from io import BytesIO
+#import requests
+#from io import BytesIO
 
 # Load the pre-trained Random Forest model (replace 'model.pkl' with your actual path)
 model = pd.read_pickle(r'titanic_model.pkl')
