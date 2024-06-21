@@ -68,7 +68,7 @@ if st.button("Predict Survival"):
 
     else:
         #image_base64 = get_base64_of_bin_file(r"C:\Users\rasa1012\Documents\Personal\ML Projects\Titanic Prediction\drowning.jpg")
-        #st.image(r"drowning.jpg", caption='Sorry...', use_column_width=True)
+        st.image(r"drowning.jpg", caption='Sorry...', use_column_width=True)
         predicted_label = "**You went down with the ship, but your data lives on!.Maybe next time, choose a lifeboat!**"
         # Display prediction results
         st.write(predicted_label)
