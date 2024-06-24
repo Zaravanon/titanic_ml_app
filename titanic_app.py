@@ -7,7 +7,7 @@ import pandas as pd
 model = pd.read_pickle(r'titanic_model.pkl')
 
 # Title and description for your app
-st.title("TITANIC SIRVIVAL PREDICTOR")
+st.title("TITANIC SURVIVAL PREDICTOR")
 st.write("Predict a passenger's survival chance based on their information.")
 
 #features = ['Pclass', 'Sex', 'Embarked', 'famsize','AgeCategory','SibSp','Parch'] 
